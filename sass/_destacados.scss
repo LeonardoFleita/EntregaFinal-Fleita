@@ -1,38 +1,73 @@
-@media(min-width: 500px){
-    .mainDestacados{
+@media(min-width: 300px){
+    .main-destacados{
         background: url('../img/index/fondoIndex.jpg') #B5B5B5;
         background-size: cover;
         background-position: top center;
-        padding: 7rem 3rem 5rem 3rem;
+        padding: 7rem 0rem 5rem 0rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         .destacados__texto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 22rem;
+            h1{
+                @include titulos(white, 3rem, 2rem);
+            }
+            p{
+                @include parrafo(1.5rem);
+                color: $pColor;
+            }
+        }
+        .destacados__videos{
+            margin-top: 5rem;
+            display: flex;
+            flex-wrap: wrap;
+            width: 22rem;
+            div{
+                margin-bottom: 5rem;
+                iframe{
+                    width: 22rem;
+                    height: 12rem;
+                    box-shadow: 10px 5px 8px 0px rgba(26, 26, 26, 0.26);
+                    -webkit-box-shadow: 10px 5px 8px 0px rgba(26, 26, 26, 0.26);
+                    -moz-box-shadow: 10px 5px 8px 0px rgba(26, 26, 26, 0.26);
+                }
+                h2{
+                    font-family: 'Roboto', sans-serif;
+                    color: white;
+                    padding-top: 1rem;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    text-shadow: 4px 3px 5px rgba(0,0,0,0.6);
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 500px){
+    .main-destacados{
+        .destacados__texto{
+            align-items: flex-start;
+            width: 40rem;
             h1{
                 @include titulos(white, 4.2rem, 2rem);
             }
             p{
                 @include parrafo(1.7rem);
-                color: $pColor;
             }
         }
-        .videos{
-            margin-top: 2rem;
-            display: flex;
-            flex-wrap: wrap;
+        .destacados__videos{
             width: 40rem;
             div{
-                margin: 0 0 5rem 0;
                 iframe{
                     width: 40rem;
                     height: 22rem;
                 }
                 h2{
-                    font-family: 'Roboto', sans-serif;
-                    color: $pColor;
-                    padding-top: 1rem;
                     font-size: 2rem;
-                    font-weight: 700;
                 }
             }
         }
@@ -40,9 +75,11 @@
 }
 
 @media(min-width: 1024px){
-    .mainDestacados{
-        padding: 7rem 5rem 5rem 5rem;
-        .videos{
+    .main-destacados{
+        .destacados__texto{
+            width: 84rem;
+        }
+        .destacados__videos{
             width: 88rem;
             div{
                 margin: 0 2rem 5rem 2rem;
@@ -52,9 +89,11 @@
 }
 
 @media(min-width: 1600px){
-    .mainDestacados{
-        padding: 7rem 8rem 5rem 8rem;
-        .videos{
+    .main-destacados{
+        .destacados__texto{
+            width: 90rem;
+        }
+        .destacados__videos{
             width: 132rem;
         }
     }

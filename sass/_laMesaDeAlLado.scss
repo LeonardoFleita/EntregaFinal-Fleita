@@ -26,6 +26,7 @@
                     flex-direction: column;
                     align-items: center;
                     h1{
+                        text-align: center;
                         @include titulos(white, 3rem, 2rem);
                     }
                     p{
@@ -124,7 +125,7 @@
         main{
             .main-mesa__grilla{
                 .mesa{
-                    width: 91rem;
+                    width: 90rem;
                 }
                 .album{
                     width: 90rem;
