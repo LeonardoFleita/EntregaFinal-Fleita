@@ -1,0 +1,198 @@
+@media(min-width: 300px){
+    %mainpad{
+        padding: 7rem 1rem 0rem 1rem;
+    }
+    .grilla-index{
+        display: grid;
+        grid-template-areas: 
+                "header"
+                "mainIndex"
+                "footer";
+        main{
+            background: url('../img/index/fondoIndex.jpg') #a7a7a7;
+            background-position: top center;
+            background-size: cover;
+            grid-area: mainIndex;
+            @extend %mainpad;
+            .main-index__grilla{
+                display: grid;
+                column-gap: 2rem;
+                row-gap: 5rem;
+                grid-template-areas:
+                "titulo" 
+                "sinopsis"
+                "serpiente"
+                "demo"
+                "fotoCalaveras";
+                justify-content: center;
+                justify-items: center;
+                .titulo-index{
+                    grid-area: titulo;
+                    h1{
+                        @include titulos(white, 3rem, 0);
+                    }
+                }
+                .sinopsis{
+                    grid-area: sinopsis;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 22rem;
+                    img{
+                        width: 16rem;
+                        margin-bottom: 3rem; 
+                    }
+                    p{
+                        @include parrafo(1.4rem);
+                        color: $pColor;
+                        margin-bottom: 1.5rem;
+                        text-align: justify;
+                    }
+                }
+                .serpiente{
+                    margin-top: 1rem;
+                    grid-area: serpiente;
+                    align-self: center;
+                    justify-self: center;
+                }
+                .demo{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 1rem;
+                    img{
+                        width: 10rem;
+                        margin-bottom: 3rem;
+                    }
+                    iframe{
+                        width: 24rem; 
+                        height: 13rem;
+                        box-shadow: 10px -5px 8px 0px rgba(0,0,0,0.26);
+                        -webkit-box-shadow: 10px -5px 8px 0px rgba(0,0,0,0.26);
+                        -moz-box-shadow: 10px -5px 8px 0px rgba(0,0,0,0.26);
+                    }
+                }
+                .fotoPose{
+                    margin-top: 2rem;
+                    grid-area: fotoCalaveras;
+                    justify-self: center;
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 500px){
+    .grilla-index{
+        main{
+            padding: 7rem 5rem 0rem 5rem;
+            .main-index__grilla{
+                .titulo-index{
+                    h1{
+                        @include titulos(white, 4.2rem, 0)
+                    }
+                }
+                .sinopsis{
+                    align-items: flex-start;
+                    width: 40rem;
+                    img{
+                        width: 20rem;
+                    }
+                    p{
+                        @include parrafo(1.7rem)
+                    }
+                }
+                .demo{
+                    align-items: flex-start;
+                    img{
+                        width: 12rem;
+                    }
+                    iframe{
+                        width: 40rem; 
+                        height: 22rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:768px){
+    .grilla-index{
+        main{
+            padding: 7rem 6rem 0rem 6rem;
+            .main-index__grilla{
+                grid-template-areas: 
+                "titulo titulo"
+                "sinopsis sinopsis"
+                "demo serpiente"
+                "fotoCalaveras fotoCalaveras";
+                .sinopsis{
+                    width: 60rem;
+                    img{
+                        width: 22rem;
+                    }
+                }
+                .serpiente{
+                    margin: 0;
+                    align-self: end;
+                }
+                .demo{
+                    margin-bottom: 0.5rem;
+                    align-self: end;
+                    img{
+                        width: 13rem;
+                    }
+                }
+                .fotoPose{
+                    margin: 0rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px){
+    .grilla-index{
+        main{
+            .main-index__grilla{
+                .sinopsis{
+                    width: 60rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1300px){
+    .grilla-index{
+        main{
+            .main-index__grilla{
+                grid-template-areas: 
+                "titulo titulo"
+                "sinopsis serpiente"
+                "fotoCalaveras demo";
+                align-items: center;
+                .sinopsis{
+                    width: 50rem;
+                    img{
+                        width: 24rem;
+                    }
+                }
+                .demo{
+                    margin-bottom: 2rem;
+                    img{
+                        width: 15rem;
+                    }
+                    iframe{
+                        width: 50rem;
+                        height: 28rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
