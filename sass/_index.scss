@@ -1,7 +1,4 @@
 @media(min-width: 300px){
-    %mainpad{
-        padding: 7rem 1rem 0rem 1rem;
-    }
     .grilla-index{
         display: grid;
         grid-template-areas: 
@@ -13,7 +10,7 @@
             background-position: top center;
             background-size: cover;
             grid-area: mainIndex;
-            @extend %mainpad;
+            padding-top: 7rem;
             .main-index__grilla{
                 display: grid;
                 column-gap: 2rem;
@@ -23,7 +20,7 @@
                 "sinopsis"
                 "serpiente"
                 "demo"
-                "fotoCalaveras";
+                "fotoPose";
                 justify-content: center;
                 justify-items: center;
                 .titulo-index{
@@ -46,15 +43,11 @@
                     p{
                         @include parrafo(1.4rem);
                         color: $pColor;
-                        margin-bottom: 1.5rem;
-                        text-align: justify;
                     }
                 }
                 .serpiente{
                     margin-top: 1rem;
                     grid-area: serpiente;
-                    align-self: center;
-                    justify-self: center;
                 }
                 .demo{
                     display: flex;
@@ -66,18 +59,49 @@
                         margin-bottom: 3rem;
                     }
                     iframe{
-                        width: 24rem; 
-                        height: 13rem;
-                        box-shadow: 10px 5px 8px 0px rgba(26, 26, 26, 0.26);
-                        -webkit-box-shadow: 10px 5px 8px 0px rgba(26, 26, 26, 0.26);
-                        -moz-box-shadow: 10px 5px 8px 0px rgba(26, 26, 26, 0.26);
+                        width: 22rem; 
+                        height: 12rem;
+                        box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
+                        -webkit-box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
+                        -moz-box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
                     }
                 }
                 .fotoPose{
-                    margin-top: 2rem;
-                    grid-area: fotoCalaveras;
-                    justify-self: center;
+                    margin-top: 1rem;
+                    grid-area: fotoPose;
                     align-self: flex-end;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 400px){
+    .grilla-index{
+        main{
+            .main-index__grilla{
+                .titulo-index{
+                    h1{
+                        @include titulos(white, 3.5rem, 0)
+                    }
+                }
+                .sinopsis{
+                    width: 32rem;
+                    img{
+                        width: 18rem;
+                    }
+                    p{
+                        @include parrafo(1.6rem)
+                    }
+                }
+                .demo{
+                    img{
+                        width: 11rem;
+                    }
+                    iframe{
+                        width: 32rem; 
+                        height: 18rem;
+                    }
                 }
             }
         }
@@ -87,11 +111,10 @@
 @media(min-width: 500px){
     .grilla-index{
         main{
-            padding: 7rem 5rem 0rem 5rem;
             .main-index__grilla{
                 .titulo-index{
                     h1{
-                        @include titulos(white, 4.2rem, 0)
+                        @include titulos(white, 4rem, 0)
                     }
                 }
                 .sinopsis{
@@ -122,13 +145,12 @@
 @media(min-width:768px){
     .grilla-index{
         main{
-            padding: 7rem 6rem 0rem 6rem;
             .main-index__grilla{
                 grid-template-areas: 
                 "titulo titulo"
                 "sinopsis sinopsis"
                 "demo serpiente"
-                "fotoCalaveras fotoCalaveras";
+                "fotoPose fotoPose";
                 .sinopsis{
                     width: 60rem;
                     img{
@@ -158,41 +180,24 @@
     .grilla-index{
         main{
             .main-index__grilla{
+                grid-template-areas: 
+                "titulo titulo"
+                "sinopsis serpiente"
+                "fotoPose demo";
                 .sinopsis{
-                    width: 60rem;
+                    width: 50rem;
+                }
+                .demo{
+                    margin: 0;
+                    align-self: center;
+                    img{
+                        margin-bottom: 1.5rem;
+                    }
                 }
             }
         }
     }
 }
 
-@media(min-width:1300px){
-    .grilla-index{
-        main{
-            .main-index__grilla{
-                grid-template-areas: 
-                "titulo titulo"
-                "sinopsis serpiente"
-                "fotoCalaveras demo";
-                align-items: center;
-                .sinopsis{
-                    width: 50rem;
-                    img{
-                        width: 24rem;
-                    }
-                }
-                .demo{
-                    margin-bottom: 2rem;
-                    img{
-                        width: 15rem;
-                    }
-                    iframe{
-                        width: 50rem;
-                        height: 28rem;
-                    }
-                }
-            }
-        }
-    }
-}
+
 

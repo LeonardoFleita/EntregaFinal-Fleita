@@ -86,9 +86,6 @@ header nav ul .vivo a img:hover {
   }
 }
 @media (min-width: 300px) {
-  .grilla-index main {
-    padding: 7rem 1rem 0rem 1rem;
-  }
   .grilla-index {
     display: grid;
     grid-template-areas: "header" "mainIndex" "footer";
@@ -98,13 +95,14 @@ header nav ul .vivo a img:hover {
     background-position: top center;
     background-size: cover;
     grid-area: mainIndex;
+    padding-top: 7rem;
   }
   .grilla-index main .main-index__grilla {
     display: grid;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
     row-gap: 5rem;
-    grid-template-areas: "titulo" "sinopsis" "serpiente" "demo" "fotoCalaveras";
+    grid-template-areas: "titulo" "sinopsis" "serpiente" "demo" "fotoPose";
     justify-content: center;
     justify-items: center;
   }
@@ -137,14 +135,10 @@ header nav ul .vivo a img:hover {
     font-weight: 600;
     text-align: justify;
     color: #3d3d3d;
-    margin-bottom: 1.5rem;
-    text-align: justify;
   }
   .grilla-index main .main-index__grilla .serpiente {
     margin-top: 1rem;
     grid-area: serpiente;
-    align-self: center;
-    justify-self: center;
   }
   .grilla-index main .main-index__grilla .demo {
     display: flex;
@@ -157,27 +151,52 @@ header nav ul .vivo a img:hover {
     margin-bottom: 3rem;
   }
   .grilla-index main .main-index__grilla .demo iframe {
-    width: 24rem;
-    height: 13rem;
-    box-shadow: 10px 5px 8px 0px rgba(26, 26, 26, 0.26);
-    -webkit-box-shadow: 10px 5px 8px 0px rgba(26, 26, 26, 0.26);
-    -moz-box-shadow: 10px 5px 8px 0px rgba(26, 26, 26, 0.26);
+    width: 22rem;
+    height: 12rem;
+    box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
   }
   .grilla-index main .main-index__grilla .fotoPose {
-    margin-top: 2rem;
-    grid-area: fotoCalaveras;
-    justify-self: center;
+    margin-top: 1rem;
+    grid-area: fotoPose;
     align-self: flex-end;
   }
 }
-@media (min-width: 500px) {
-  .grilla-index main {
-    padding: 7rem 5rem 0rem 5rem;
-  }
+@media (min-width: 400px) {
   .grilla-index main .main-index__grilla .titulo-index h1 {
     color: white;
     font-family: "Varela Round", sans-serif;
-    font-size: 4.2rem;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
+  }
+  .grilla-index main .main-index__grilla .sinopsis {
+    width: 32rem;
+  }
+  .grilla-index main .main-index__grilla .sinopsis img {
+    width: 18rem;
+  }
+  .grilla-index main .main-index__grilla .sinopsis p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: justify;
+  }
+  .grilla-index main .main-index__grilla .demo img {
+    width: 11rem;
+  }
+  .grilla-index main .main-index__grilla .demo iframe {
+    width: 32rem;
+    height: 18rem;
+  }
+}
+@media (min-width: 500px) {
+  .grilla-index main .main-index__grilla .titulo-index h1 {
+    color: white;
+    font-family: "Varela Round", sans-serif;
+    font-size: 4rem;
     font-weight: 400;
     margin-bottom: 0;
     text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
@@ -207,11 +226,8 @@ header nav ul .vivo a img:hover {
   }
 }
 @media (min-width: 768px) {
-  .grilla-index main {
-    padding: 7rem 6rem 0rem 6rem;
-  }
   .grilla-index main .main-index__grilla {
-    grid-template-areas: "titulo titulo" "sinopsis sinopsis" "demo serpiente" "fotoCalaveras fotoCalaveras";
+    grid-template-areas: "titulo titulo" "sinopsis sinopsis" "demo serpiente" "fotoPose fotoPose";
   }
   .grilla-index main .main-index__grilla .sinopsis {
     width: 60rem;
@@ -235,30 +251,18 @@ header nav ul .vivo a img:hover {
   }
 }
 @media (min-width: 1024px) {
-  .grilla-index main .main-index__grilla .sinopsis {
-    width: 60rem;
-  }
-}
-@media (min-width: 1300px) {
   .grilla-index main .main-index__grilla {
-    grid-template-areas: "titulo titulo" "sinopsis serpiente" "fotoCalaveras demo";
-    align-items: center;
+    grid-template-areas: "titulo titulo" "sinopsis serpiente" "fotoPose demo";
   }
   .grilla-index main .main-index__grilla .sinopsis {
     width: 50rem;
-  }
-  .grilla-index main .main-index__grilla .sinopsis img {
-    width: 24rem;
   }
   .grilla-index main .main-index__grilla .demo {
-    margin-bottom: 2rem;
+    margin: 0;
+    align-self: center;
   }
   .grilla-index main .main-index__grilla .demo img {
-    width: 15rem;
-  }
-  .grilla-index main .main-index__grilla .demo iframe {
-    width: 50rem;
-    height: 28rem;
+    margin-bottom: 1.5rem;
   }
 }
 @media (min-width: 300px) {
@@ -656,9 +660,9 @@ header nav ul .vivo a img:hover {
   .main-destacados .destacados__videos div iframe {
     width: 22rem;
     height: 12rem;
-    box-shadow: 10px 5px 8px 0px rgba(26, 26, 26, 0.26);
-    -webkit-box-shadow: 10px 5px 8px 0px rgba(26, 26, 26, 0.26);
-    -moz-box-shadow: 10px 5px 8px 0px rgba(26, 26, 26, 0.26);
+    box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
   }
   .main-destacados .destacados__videos div h2 {
     font-family: "Roboto", sans-serif;
@@ -669,6 +673,35 @@ header nav ul .vivo a img:hover {
     text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
   }
 }
+@media (min-width: 400px) {
+  .main-destacados .destacados__texto {
+    width: 32rem;
+  }
+  .main-destacados .destacados__texto h1 {
+    color: white;
+    font-family: "Varela Round", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
+  }
+  .main-destacados .destacados__texto p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: justify;
+  }
+  .main-destacados .destacados__videos {
+    width: 32rem;
+  }
+  .main-destacados .destacados__videos div iframe {
+    width: 32rem;
+    height: 18rem;
+  }
+  .main-destacados .destacados__videos div h2 {
+    font-size: 2rem;
+  }
+}
 @media (min-width: 500px) {
   .main-destacados .destacados__texto {
     align-items: flex-start;
@@ -677,7 +710,7 @@ header nav ul .vivo a img:hover {
   .main-destacados .destacados__texto h1 {
     color: white;
     font-family: "Varela Round", sans-serif;
-    font-size: 4.2rem;
+    font-size: 4rem;
     font-weight: 400;
     margin-bottom: 2rem;
     text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
@@ -693,10 +726,7 @@ header nav ul .vivo a img:hover {
   }
   .main-destacados .destacados__videos div iframe {
     width: 40rem;
-    height: 22rem;
-  }
-  .main-destacados .destacados__videos div h2 {
-    font-size: 2rem;
+    height: 22.5rem;
   }
 }
 @media (min-width: 1024px) {

@@ -30,9 +30,9 @@
                 iframe{
                     width: 22rem;
                     height: 12rem;
-                    box-shadow: 10px 5px 8px 0px rgba(26, 26, 26, 0.26);
-                    -webkit-box-shadow: 10px 5px 8px 0px rgba(26, 26, 26, 0.26);
-                    -moz-box-shadow: 10px 5px 8px 0px rgba(26, 26, 26, 0.26);
+                    box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
+                    -webkit-box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
+                    -moz-box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
                 }
                 h2{
                     font-family: 'Roboto', sans-serif;
@@ -47,13 +47,39 @@
     }
 }
 
+@media(min-width: 400px){
+    .main-destacados{
+        .destacados__texto{
+            width: 32rem;
+            h1{
+                @include titulos(white, 3.5rem, 2rem);
+            }
+            p{
+                @include parrafo(1.6rem);
+            }
+        }
+        .destacados__videos{
+            width: 32rem;
+            div{
+                iframe{
+                    width: 32rem;
+                    height: 18rem;
+                }
+                h2{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
 @media(min-width: 500px){
     .main-destacados{
         .destacados__texto{
             align-items: flex-start;
             width: 40rem;
             h1{
-                @include titulos(white, 4.2rem, 2rem);
+                @include titulos(white, 4rem, 2rem);
             }
             p{
                 @include parrafo(1.7rem);
@@ -64,10 +90,7 @@
             div{
                 iframe{
                     width: 40rem;
-                    height: 22rem;
-                }
-                h2{
-                    font-size: 2rem;
+                    height: 22.5rem;
                 }
             }
         }
