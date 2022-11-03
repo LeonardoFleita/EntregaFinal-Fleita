@@ -48,12 +48,12 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    .integrantes-titulo{
+                    .integrantes__titulo{
                         img{
                             height: 6rem;
                         }
                     }
-                    .integrantes-grilla{
+                    .integrantes__grilla{
                         display: grid;
                         grid-template-areas:
                         "caraNati"
@@ -184,12 +184,12 @@
                     }
                 }
                 .integrantes{
-                    .integrantes-titulo{
+                    .integrantes__titulo{
                         img{
                             height: 7rem;
                         }
                     }
-                    .integrantes-grilla{
+                    .integrantes__grilla{
                         grid-template-areas: 
                         "caraNati datosNati"
                         "caraFlute datosFlute"
@@ -214,7 +214,7 @@
                             }
                         }
                         .datos{
-                            width: 27rem;
+                            width: 25rem;
                             align-items: flex-start;
                             h2{
                                 font-size: 2.2rem;
@@ -225,7 +225,7 @@
                                 }
                             }
                             p{
-                                @include parrafo(1.3rem);
+                                @include parrafo(1.2rem);
                             }  
                         }
                     }
@@ -246,20 +246,17 @@
                 align-items: center;
                 .quienesSomos{
                     margin-bottom: 0;
-                    align-items: flex-start;
                 }
                 .fotoCalavera{
                     margin: 3rem 0 0 2rem;
                 }
                 .integrantes{
-                    .integrantes-titulo{
-                        img{
-                            height: 8rem;
-                        }
-                    }
-                    .integrantes-grilla{
+                    .integrantes__grilla{
                         .datos{
                             width: 30rem;
+                            p{
+                                @include parrafo(1.3rem);
+                            } 
                         }
                     }
                 }
@@ -280,11 +277,11 @@
                     align-self: end;
                 }
                 .integrantes{
-                    .integrantes-grilla{
+                    .integrantes__grilla{
                         grid-template-areas: 
                         "caraNati datosNati caraFlute datosFlute"
                         "caraFranco datosFranco caraDami datosDami";
-                        column-gap: 3.5rem;
+                        column-gap: 3rem;
                     }
                 }
             }
@@ -300,10 +297,10 @@
                     width: 61rem;
                 }
                 .integrantes{
-                    .integrantes-grilla{
+                    .integrantes__grilla{
                         .cara{
                             img{
-                                height: 16rem;
+                                height: 15rem;
                             }
                         }
                     }

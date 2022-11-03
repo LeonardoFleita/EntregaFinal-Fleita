@@ -15,7 +15,7 @@
                 display: grid;
                 grid-template-areas: 
                 "mesa"
-                "titulo-img"
+                "grafica-mesa"
                 "carrusel";
                 justify-items: center;
                 row-gap: 2rem;
@@ -35,8 +35,8 @@
                         margin-bottom: 1.5rem; 
                     }
                 }
-                .tituloMesa-img{
-                    grid-area: titulo-img;
+                .grafica-mesa{
+                    grid-area: grafica-mesa;
                     align-self: center;
                     img{
                         height: 8rem;
@@ -68,7 +68,7 @@
                         @include parrafo(1.6rem);
                     }
                 }
-                .tituloMesa-img{
+                .grafica-mesa{
                     img{
                         height: 9rem;
                     }
@@ -95,7 +95,7 @@
                         @include parrafo(1.7rem);
                     }
                 }
-                .tituloMesa-img{
+                .grafica-mesa{
                     img{
                         height: 10rem;
                     }
@@ -114,7 +114,6 @@
             .main-mesa__grilla{
                 row-gap: 4rem;
                 .mesa{
-                    align-items: flex-start;
                     width: 60rem;
                 }
                 .album{
@@ -132,7 +131,7 @@
                 .mesa{
                     width: 85rem;
                 }
-                .tituloMesa-img{
+                .grafica-mesa{
                     img{
                         height: 13rem;
                     }

@@ -86,6 +86,11 @@ header nav ul .vivo a img:hover {
   }
 }
 @media (min-width: 300px) {
+  .grilla-index main .main-index__grilla .demo iframe {
+    box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
+  }
   .grilla-index {
     display: grid;
     grid-template-areas: "header" "mainIndex" "footer";
@@ -153,9 +158,6 @@ header nav ul .vivo a img:hover {
   .grilla-index main .main-index__grilla .demo iframe {
     width: 22rem;
     height: 12rem;
-    box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
-    -webkit-box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
-    -moz-box-shadow: 10px 5px 8px 0px rgba(0, 0, 0, 0.26);
   }
   .grilla-index main .main-index__grilla .fotoPose {
     margin-top: 1rem;
@@ -321,10 +323,10 @@ header nav ul .vivo a img:hover {
     flex-direction: column;
     align-items: center;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-titulo img {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__titulo img {
     height: 6rem;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla {
     display: grid;
     grid-template-areas: "caraNati" "datosNati" "caraFlute" "datosFlute" "caraFranco" "datosFranco" "caraDami" "datosDami";
     row-gap: 2rem;
@@ -332,49 +334,49 @@ header nav ul .vivo a img:hover {
     align-items: center;
     margin-top: 5rem;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .cara img {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .cara img {
     margin-top: 1.5rem;
     height: 11.5rem;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .cara-nati {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .cara-nati {
     grid-area: caraNati;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .cara-nati img {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .cara-nati img {
     height: 12.5rem;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .cara-flute {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .cara-flute {
     grid-area: caraFlute;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .cara-franco {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .cara-franco {
     grid-area: caraFranco;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .cara-dami {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .cara-dami {
     grid-area: caraDami;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .cara-dami img {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .cara-dami img {
     height: 12rem;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .datos {
     width: 16rem;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos h2 {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .datos h2 {
     font-family: "Roboto", sans-serif;
     color: white;
     font-size: 1.8rem;
     font-weight: 600;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos a img {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .datos a img {
     height: 3.5rem;
     padding-bottom: 0.2rem;
     transition: all 0.3s;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos a img:hover {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .datos a img:hover {
     transform: scale(1.1);
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos p {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .datos p {
     color: #3d3d3d;
     font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
@@ -382,19 +384,19 @@ header nav ul .vivo a img:hover {
     text-align: justify;
     text-align: center;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos-nati {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .datos-nati {
     grid-area: datosNati;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos-flute {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .datos-flute {
     grid-area: datosFlute;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos-franco {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .datos-franco {
     grid-area: datosFranco;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos-franco p {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .datos-franco p {
     margin-bottom: 0;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos-dami {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .datos-dami {
     grid-area: datosDami;
   }
 }
@@ -442,38 +444,38 @@ header nav ul .vivo a img:hover {
   .grilla-quienesSomos main .main-quienesSomos__grilla .fotoCalavera img {
     height: 20rem;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-titulo img {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__titulo img {
     height: 7rem;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla {
     grid-template-areas: "caraNati datosNati" "caraFlute datosFlute" "caraFranco datosFranco" "caraDami datosDami";
     row-gap: 8rem;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .cara img {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .cara img {
     margin: 0;
     height: 13rem;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .cara-nati img {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .cara-nati img {
     height: 14rem;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .cara-dami img {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .cara-dami img {
     height: 13.5rem;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos {
-    width: 27rem;
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .datos {
+    width: 25rem;
     align-items: flex-start;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos h2 {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .datos h2 {
     font-size: 2.2rem;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos a img {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .datos a img {
     height: 5rem;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos p {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .datos p {
     font-family: "Roboto", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-align: justify;
   }
@@ -487,16 +489,18 @@ header nav ul .vivo a img:hover {
   }
   .grilla-quienesSomos main .main-quienesSomos__grilla .quienesSomos {
     margin-bottom: 0;
-    align-items: flex-start;
   }
   .grilla-quienesSomos main .main-quienesSomos__grilla .fotoCalavera {
     margin: 3rem 0 0 2rem;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-titulo img {
-    height: 8rem;
-  }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .datos {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .datos {
     width: 30rem;
+  }
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .datos p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: justify;
   }
 }
 @media (min-width: 1024px) {
@@ -510,18 +514,18 @@ header nav ul .vivo a img:hover {
   .grilla-quienesSomos main .main-quienesSomos__grilla .fotoCalavera {
     align-self: end;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla {
     grid-template-areas: "caraNati datosNati caraFlute datosFlute" "caraFranco datosFranco caraDami datosDami";
-    -moz-column-gap: 3.5rem;
-         column-gap: 3.5rem;
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
 }
 @media (min-width: 1300px) {
   .grilla-quienesSomos main .main-quienesSomos__grilla .quienesSomos {
     width: 61rem;
   }
-  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes-grilla .cara img {
-    height: 16rem;
+  .grilla-quienesSomos main .main-quienesSomos__grilla .integrantes .integrantes__grilla .cara img {
+    height: 15rem;
   }
 }
 @media (min-width: 300px) {
@@ -538,7 +542,7 @@ header nav ul .vivo a img:hover {
   }
   .grilla-mesaDeAlLado main .main-mesa__grilla {
     display: grid;
-    grid-template-areas: "mesa" "titulo-img" "carrusel";
+    grid-template-areas: "mesa" "grafica-mesa" "carrusel";
     justify-items: center;
     row-gap: 2rem;
   }
@@ -566,11 +570,11 @@ header nav ul .vivo a img:hover {
     text-align: justify;
     margin-bottom: 1.5rem;
   }
-  .grilla-mesaDeAlLado main .main-mesa__grilla .tituloMesa-img {
-    grid-area: titulo-img;
+  .grilla-mesaDeAlLado main .main-mesa__grilla .grafica-mesa {
+    grid-area: grafica-mesa;
     align-self: center;
   }
-  .grilla-mesaDeAlLado main .main-mesa__grilla .tituloMesa-img img {
+  .grilla-mesaDeAlLado main .main-mesa__grilla .grafica-mesa img {
     height: 8rem;
   }
   .grilla-mesaDeAlLado main .main-mesa__grilla .album {
@@ -602,7 +606,7 @@ header nav ul .vivo a img:hover {
     font-weight: 600;
     text-align: justify;
   }
-  .grilla-mesaDeAlLado main .main-mesa__grilla .tituloMesa-img img {
+  .grilla-mesaDeAlLado main .main-mesa__grilla .grafica-mesa img {
     height: 9rem;
   }
   .grilla-mesaDeAlLado main .main-mesa__grilla .album {
@@ -628,7 +632,7 @@ header nav ul .vivo a img:hover {
     font-weight: 600;
     text-align: justify;
   }
-  .grilla-mesaDeAlLado main .main-mesa__grilla .tituloMesa-img img {
+  .grilla-mesaDeAlLado main .main-mesa__grilla .grafica-mesa img {
     height: 10rem;
   }
   .grilla-mesaDeAlLado main .main-mesa__grilla .album {
@@ -640,7 +644,6 @@ header nav ul .vivo a img:hover {
     row-gap: 4rem;
   }
   .grilla-mesaDeAlLado main .main-mesa__grilla .mesa {
-    align-items: flex-start;
     width: 60rem;
   }
   .grilla-mesaDeAlLado main .main-mesa__grilla .album {
@@ -651,7 +654,7 @@ header nav ul .vivo a img:hover {
   .grilla-mesaDeAlLado main .main-mesa__grilla .mesa {
     width: 85rem;
   }
-  .grilla-mesaDeAlLado main .main-mesa__grilla .tituloMesa-img img {
+  .grilla-mesaDeAlLado main .main-mesa__grilla .grafica-mesa img {
     height: 13rem;
   }
   .grilla-mesaDeAlLado main .main-mesa__grilla .album {
@@ -843,7 +846,6 @@ header nav ul .vivo a img:hover {
     font-size: 1.4rem;
     display: flex;
     flex-direction: column;
-    justify-content: left;
     border: none;
     font-weight: 300;
   }
@@ -944,9 +946,6 @@ header nav ul .vivo a img:hover {
   }
 }
 @media (min-width: 768px) {
-  .main-contacto {
-    padding: 7rem 5rem 5rem 5rem;
-  }
   .main-contacto .contacto .contacto__texto {
     width: 50rem;
   }
@@ -1006,7 +1005,7 @@ header nav ul .vivo a img:hover {
     justify-content: center;
     align-items: center;
   }
-  footer div h3 {
+  footer div h2 {
     color: #cbdd74;
     font-family: "Open Sans", sans-serif;
     font-size: 1.1rem;
