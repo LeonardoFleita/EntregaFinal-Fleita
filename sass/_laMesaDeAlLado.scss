@@ -10,7 +10,7 @@
             background-size: cover;
             background-position: top center;
             grid-area: mainMesa;
-            padding: 7rem 1rem 5rem 1rem;
+            padding: 7rem 0rem 5rem 0rem;
             .main-mesa__grilla{
                 display: grid;
                 grid-template-areas: 
@@ -54,17 +54,42 @@
     }
 }
 
+@media(min-width: 400px){
+    .grilla-mesaDeAlLado{
+        main{
+            .main-mesa__grilla{
+                row-gap: 3rem;
+                .mesa{
+                    width: 32rem;
+                    h1{
+                        @include titulos(white, 3.5rem, 2rem);
+                    }
+                    p{
+                        @include parrafo(1.6rem);
+                    }
+                }
+                .tituloMesa-img{
+                    img{
+                        height: 9rem;
+                    }
+                }
+                .album{
+                    width: 32rem;
+                }
+            }
+        }
+    }
+}
 
 @media(min-width: 500px){
     .grilla-mesaDeAlLado{
         main{
-            padding: 7rem 5rem 5rem 5rem;
             .main-mesa__grilla{
-                row-gap: 3rem;
                 .mesa{
                     width: 38rem;
+                    align-items: flex-start;
                     h1{
-                        @include titulos(white, 4.2rem, 2rem);
+                        @include titulos(white, 4rem, 2rem);
                     }
                     p{
                         @include parrafo(1.7rem);

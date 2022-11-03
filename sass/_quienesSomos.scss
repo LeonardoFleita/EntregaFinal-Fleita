@@ -23,6 +23,9 @@
                     margin-bottom: 3rem;
                     grid-area: quienesSomos;
                     width: 22rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     h1{
                         @include titulos(white, 3rem, 2rem);
                     }
@@ -138,14 +141,38 @@
     }
 }
 
+@media(min-width: 400px){
+    .grilla-quienesSomos{
+        main{
+            .main-quienesSomos__grilla{
+                .quienesSomos{
+                    width: 32rem;
+                    h1{
+                        @include titulos(white, 3.5rem, 2rem);
+                    }
+                    p{
+                        @include parrafo(1.6rem);
+                    }
+                }
+                .fotoCalavera{
+                    img{
+                        height: 17rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media(min-width: 500px){
     .grilla-quienesSomos{
         main{
             .main-quienesSomos__grilla{
                 .quienesSomos{
                     width: 40rem;
+                    align-items: flex-start;
                     h1{
-                        @include titulos(white, 4.2rem, 2rem);
+                        @include titulos(white, 4rem, 2rem);
                     }
                     p{
                         @include parrafo(1.7rem);

@@ -3,7 +3,7 @@
         background: url('../img/contacto/fondoContacto.jpg') rgb(44, 44, 44);
         background-position: top center;
         background-size: cover;
-        padding: 7rem 1rem 5rem 1rem;
+        padding: 7rem 0rem 5rem 0rem;
         .contacto{
             display: flex;
             flex-direction: column;
@@ -74,16 +74,45 @@
     }
 }
 
+@media(min-width: 400px){
+    .main-contacto{
+        .contacto{
+            @include parrafo(1.6rem);
+            .contacto__texto{
+                width: 32rem;
+                h1{
+                    @include titulos(white, 3.5rem, 2rem);
+                }
+            }
+        }
+        .formulario{
+            form{
+                width: 32rem;
+                fieldset{
+                    textarea{
+                        width: 32rem;
+                    }
+                    .formulario__boton{
+                        width: 13rem;
+                    }
+                    .mb-3{
+                        width: 30.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media(min-width: 500px){
     .main-contacto{
-        padding: 7rem 5rem 5rem 5rem;
         .contacto{
             @include parrafo(1.7rem);
             .contacto__texto{
                 align-items: flex-start;
                 width: 40rem;
                 h1{
-                    @include titulos(white, 4.2rem, 2rem);
+                    @include titulos(white, 4rem, 2rem);
                 }
             }
         }

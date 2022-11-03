@@ -287,6 +287,9 @@ header nav ul .vivo a img:hover {
     margin-bottom: 3rem;
     grid-area: quienesSomos;
     width: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .grilla-quienesSomos main .main-quienesSomos__grilla .quienesSomos h1 {
     color: white;
@@ -395,14 +398,37 @@ header nav ul .vivo a img:hover {
     grid-area: datosDami;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 400px) {
   .grilla-quienesSomos main .main-quienesSomos__grilla .quienesSomos {
-    width: 40rem;
+    width: 32rem;
   }
   .grilla-quienesSomos main .main-quienesSomos__grilla .quienesSomos h1 {
     color: white;
     font-family: "Varela Round", sans-serif;
-    font-size: 4.2rem;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
+  }
+  .grilla-quienesSomos main .main-quienesSomos__grilla .quienesSomos p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: justify;
+  }
+  .grilla-quienesSomos main .main-quienesSomos__grilla .fotoCalavera img {
+    height: 17rem;
+  }
+}
+@media (min-width: 500px) {
+  .grilla-quienesSomos main .main-quienesSomos__grilla .quienesSomos {
+    width: 40rem;
+    align-items: flex-start;
+  }
+  .grilla-quienesSomos main .main-quienesSomos__grilla .quienesSomos h1 {
+    color: white;
+    font-family: "Varela Round", sans-serif;
+    font-size: 4rem;
     font-weight: 400;
     margin-bottom: 2rem;
     text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
@@ -508,7 +534,7 @@ header nav ul .vivo a img:hover {
     background-size: cover;
     background-position: top center;
     grid-area: mainMesa;
-    padding: 7rem 1rem 5rem 1rem;
+    padding: 7rem 0rem 5rem 0rem;
   }
   .grilla-mesaDeAlLado main .main-mesa__grilla {
     display: grid;
@@ -555,20 +581,43 @@ header nav ul .vivo a img:hover {
     -moz-box-shadow: 10px -5px 8px 0px rgba(0, 0, 0, 0.26);
   }
 }
-@media (min-width: 500px) {
-  .grilla-mesaDeAlLado main {
-    padding: 7rem 5rem 5rem 5rem;
-  }
+@media (min-width: 400px) {
   .grilla-mesaDeAlLado main .main-mesa__grilla {
     row-gap: 3rem;
   }
   .grilla-mesaDeAlLado main .main-mesa__grilla .mesa {
-    width: 38rem;
+    width: 32rem;
   }
   .grilla-mesaDeAlLado main .main-mesa__grilla .mesa h1 {
     color: white;
     font-family: "Varela Round", sans-serif;
-    font-size: 4.2rem;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
+  }
+  .grilla-mesaDeAlLado main .main-mesa__grilla .mesa p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: justify;
+  }
+  .grilla-mesaDeAlLado main .main-mesa__grilla .tituloMesa-img img {
+    height: 9rem;
+  }
+  .grilla-mesaDeAlLado main .main-mesa__grilla .album {
+    width: 32rem;
+  }
+}
+@media (min-width: 500px) {
+  .grilla-mesaDeAlLado main .main-mesa__grilla .mesa {
+    width: 38rem;
+    align-items: flex-start;
+  }
+  .grilla-mesaDeAlLado main .main-mesa__grilla .mesa h1 {
+    color: white;
+    font-family: "Varela Round", sans-serif;
+    font-size: 4rem;
     font-weight: 400;
     margin-bottom: 2rem;
     text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
@@ -753,7 +802,7 @@ header nav ul .vivo a img:hover {
     background: url("../img/contacto/fondoContacto.jpg") rgb(44, 44, 44);
     background-position: top center;
     background-size: cover;
-    padding: 7rem 1rem 5rem 1rem;
+    padding: 7rem 0rem 5rem 0rem;
   }
   .main-contacto .contacto {
     display: flex;
@@ -831,10 +880,38 @@ header nav ul .vivo a img:hover {
     margin-top: 5rem;
   }
 }
-@media (min-width: 500px) {
-  .main-contacto {
-    padding: 7rem 5rem 5rem 5rem;
+@media (min-width: 400px) {
+  .main-contacto .contacto {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: justify;
   }
+  .main-contacto .contacto .contacto__texto {
+    width: 32rem;
+  }
+  .main-contacto .contacto .contacto__texto h1 {
+    color: white;
+    font-family: "Varela Round", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
+  }
+  .main-contacto .formulario form {
+    width: 32rem;
+  }
+  .main-contacto .formulario form fieldset textarea {
+    width: 32rem;
+  }
+  .main-contacto .formulario form fieldset .formulario__boton {
+    width: 13rem;
+  }
+  .main-contacto .formulario form fieldset .mb-3 {
+    width: 30.5rem;
+  }
+}
+@media (min-width: 500px) {
   .main-contacto .contacto {
     font-family: "Roboto", sans-serif;
     font-size: 1.7rem;
@@ -848,7 +925,7 @@ header nav ul .vivo a img:hover {
   .main-contacto .contacto .contacto__texto h1 {
     color: white;
     font-family: "Varela Round", sans-serif;
-    font-size: 4.2rem;
+    font-size: 4rem;
     font-weight: 400;
     margin-bottom: 2rem;
     text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.6);
